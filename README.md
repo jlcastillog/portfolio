@@ -1,4 +1,4 @@
-### Portfolio Jose Luis CAstillo Gávez
+# Portfolio Jose Luis Castillo Gávez
 
 Proyecto de pagina web para mi portfolio profesional usando React.js
 
