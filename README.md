@@ -69,3 +69,43 @@ Ejecutar para coger los estilos:
 ```Console
 npx tailwindcss -i ./src/input.css -o ./src/index.css --watch
 ```
+
+## Delploy in Github pages
+
+Install gh-page tool:
+
+```Console
+npm i --save-dev gh-pages
+```
+
+Set base in vite.config.js like this:
+
+```js
+export default defineConfig({
+  base: 'https://jlcastillog.github.io/portfolio/',
+  plugins: [react()],
+})
+```
+
+Add in package.json:
+```json
+"scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "lint": "eslint .",
+  "preview": "vite preview",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+}
+```
+
+```Console
+npm run predeploy
+```
+
+
+
+
+
+
+
