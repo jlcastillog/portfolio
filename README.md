@@ -103,7 +103,7 @@ Add in package.json:
 npm run predeploy
 ```
 
-
+You can find the web in this url: https://jlcastillog.github.io/portfolio/
 
 
 
