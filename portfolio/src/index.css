@@ -952,6 +952,11 @@ video {
   --tw-gradient-to: #1f2937 var(--tw-gradient-to-position);
 }
 
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1324,6 +1329,12 @@ video {
 .profile-image {
   width: 250px;
   height: 250px;
+}
+
+@media (max-width: 425px) {
+  .sm\:mt-16 {
+    margin-top: 4rem;
+  }
 }
 
 @media (min-width: 768px) {

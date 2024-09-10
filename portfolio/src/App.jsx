@@ -138,7 +138,7 @@ export default function App() {
         style={{ opacity, scale }}
       >
         <motion.div
-          className="mb-8"
+          className="mb-8 sm:mt-16"
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
