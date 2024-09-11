@@ -16,6 +16,10 @@ import {
   ChevronDownIcon,
   Code2Icon,
 } from "lucide-react";
+import DocumentManagementImg from "./assets/document_management.jpg";
+import ExamMarkRecomitionImg from "./assets/exam_mark_recognition.jpg";
+import VoteMarkRecomitionImg from "./assets/vote_mark_recognition.jpg";
+import PhotoProfileImg from "./assets/photo_profile.png";
 
 export default function App() {
   const [scrollY, setScrollY] = useState(0);
@@ -44,31 +48,28 @@ export default function App() {
       title: "Sistema de Gestión Documental",
       description:
         "JustThis products: MIKA, VDB, STA. Gestión ducumental para la policía Suiza del canton de Aargau",
-      image:
-        "https://www.comunidadbaratz.com/wp-content/uploads/2021/03/La-gestion-documental-consiste-en-la-captura-el-almacenamiento-y-la-recuperacion-de-los-documentos-600x469.jpg",
+      image: DocumentManagementImg,
       technologies: ["C#", "WPF", "SQL Server"],
     },
     {
       title: "Sistema de Gestión Documental",
       description:
         "NAPSTRA. Gestión ducumental para la policía Suiza del canton de Zurich",
-      image:
-        "https://www.comunidadbaratz.com/wp-content/uploads/2021/03/La-gestion-documental-consiste-en-la-captura-el-almacenamiento-y-la-recuperacion-de-los-documentos-600x469.jpg",
+      image: DocumentManagementImg,
       technologies: ["C#", "WPF", "SQL Server"],
     },
     {
       title: "Core de reconocimiento de votos",
       description:
         "Solución para el reconocimiento de marcas en votos de las elecciones de República Dominicana",
-      image: "https://i.blogs.es/09d873/voto4/450_1000.jpg",
+      image: VoteMarkRecomitionImg,
       technologies: ["C#", "Windows Form", "Windows Service", "Emgu CV"],
     },
     {
       title: "Sistema de reconocimiento de marcas en exámenes",
       description:
         "Instituto Cervantes: Sistema de reconocimiento de marcas en exámenes",
-      image:
-        "https://cervantes.org/themes/custom/cervantes_theme/images/instituto-cervantes.svg",
+      image: ExamMarkRecomitionImg,
       technologies: ["C#", "Windows Service", "Emgu CV"],
     },
   ];
@@ -144,7 +145,7 @@ export default function App() {
           transition={{ duration: 0.5 }}
         >
           <img
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/picture-removebg-preview-5IbqqhXjC8YBx8HhlH4fQQv1MxeBVB.png"
+            src={PhotoProfileImg}
             alt="Foto de perfil"
             className="object-cover rounded-full border-4 border-purple-400 profile-image"
           />
@@ -181,7 +182,10 @@ export default function App() {
                 <GithubIcon className="h-5 w-5" />
               </Button>
             </a>
-            <a href="https://www.linkedin.com/in/jose-luis-castillo-galvez-630a932ab/" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/jose-luis-castillo-galvez-630a932ab/"
+              target="_blank"
+            >
               <Button
                 variant="outline"
                 size="icon"
@@ -354,13 +358,12 @@ export default function App() {
           </p>
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <a href="mailto: jlcastillog@outlook.es">
-            <Button
-              size="lg"
-              className="bg-purple-600 hover:bg-purple-700 text-white transition-colors"
-              
-            >
-              <MailIcon className="mr-2 h-4 w-4" /> Contáctame
-            </Button>
+              <Button
+                size="lg"
+                className="bg-purple-600 hover:bg-purple-700 text-white transition-colors"
+              >
+                <MailIcon className="mr-2 h-4 w-4" /> Contáctame
+              </Button>
             </a>
           </motion.div>
         </div>
